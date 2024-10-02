@@ -9,7 +9,7 @@ interface GetSummaryResponse {
       {
         id: string;
         title: string;
-        completedAt: string;
+        createdAt: string;
       }[]
     >;
   };
