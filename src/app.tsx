@@ -11,13 +11,14 @@ export function App() {
 
   const { data: summary } = useQuery({
     queryKey: ["summary"],
-    queryFn: GetSummary
+    queryFn: GetSummary,
+    staleTime: 1000 * 60 // 1 minute
   })
-
+  
   return (
     <Dialog>
-        {summary && summary?.total > 0 ? <EmptyGoals /> : <Summary/>}
-        <CreateGoal />
+      {summary && summary?.total > 0 ? <Summary /> : <EmptyGoals />}
+      <CreateGoal />
     </Dialog>
   );
 }
