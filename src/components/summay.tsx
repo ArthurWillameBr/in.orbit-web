@@ -30,7 +30,7 @@ export function Summary() {
   );
 
   return (
-    <main className="py-10 px-5 mx-auto max-w-[480px] flex flex-col gap-6">
+    <main className="py-10 px-5 mx-auto max-w-[580px] flex flex-col gap-6">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-3">
           <InOrbitIcon />
